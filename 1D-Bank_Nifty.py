@@ -302,7 +302,7 @@ class EMD_dealt:
 
 #DATA READING & CLEANING
 
-df=pd.read_csv('/Users/madhav/Downloads/FINANCE/GTC-Kailasa/data/NIFTY BANK_daily_data.csv')
+df=pd.read_csv('NIFTY BANK_daily_data.csv')
 df['date'] = pd.to_datetime(df['date'])
 df = df[df['date'] >= pd.to_datetime('2020-01-01')]
 df.dropna(inplace=True)
